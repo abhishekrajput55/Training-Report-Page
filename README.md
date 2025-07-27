@@ -4,7 +4,7 @@ Here's a comprehensive README.md file for your Training Report project:
 
 A modern, responsive dashboard for showcasing industrial training reports including final documentation, daily diaries, and project repository links.
 
-🌐 Live Website
+## 🌐 Live Website
 🔗 Training Report Dashboard
 (https://tr-102-dashboard.netlify.app/)
 
