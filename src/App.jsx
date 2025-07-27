@@ -20,9 +20,8 @@ const App = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // ==========================================
-  // DAILY DIARY REPORTS - UPDATE PDF PATHS HERE
-  // ==========================================
+  // DAILY DIARY REPORTS
+
   const diaryDates = [
     "June 23",
     "June 25",
@@ -44,11 +43,9 @@ const App = () => {
   const diaryDays = Array.from({ length: 16 }, (_, i) => ({
     id: i + 1,
     name: `Day ${i + 1} Report`,
-    // ========================================
-    // INSERT YOUR DAILY DIARY PDF PATHS HERE
-    // Example: `/pdfs/day-${i + 1}.pdf` or `https://example.com/day-${i + 1}.pdf`
+
     link: `/assets/day${i + 1}.pdf`,
-    // ========================================
+
     date: diaryDates[i],
   }));
 
@@ -78,9 +75,8 @@ const App = () => {
                 including final report, daily diaries, and project showcase.
               </p>
               <div className="flex flex-wrap gap-4">
-                {/* ======================================== */}
                 {/* FINAL REPORT PDF LINK - INSERT HERE */}
-                {/* ======================================== */}
+
                 <a
                   href="/assets/final-report.pdf"
                   target="_blank"
@@ -89,9 +85,9 @@ const App = () => {
                 >
                   <i className="fas fa-file-pdf mr-2"></i> View Final Report
                 </a>
-                {/* ======================================== */}
+
                 {/* PROJECT REPOSITORY LINK - INSERT HERE */}
-                {/* ======================================== */}
+
                 <a
                   href="https://github.com/yourusername/yourproject"
                   target="_blank"
@@ -99,6 +95,15 @@ const App = () => {
                   className="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-1 shadow-lg flex items-center"
                 >
                   <i className="fab fa-github mr-2"></i> Project Repository
+                </a>
+
+                <a
+                  href="https://github.com/yourusername/yourproject"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-1 shadow-lg flex items-center"
+                >
+                  <i class="fa-solid fa-globe mr-2"></i> Live
                 </a>
               </div>
             </div>
@@ -203,9 +208,7 @@ const App = () => {
                   </div>
 
                   <div className="flex flex-wrap gap-4">
-                    {/* ======================================== */}
-                    {/* FINAL REPORT PDF LINKS - INSERT HERE */}
-                    {/* ======================================== */}
+                    {/* FINAL REPORT PDF LINKS */}
                     <a
                       href="/assets/final-report.pdf"
                       target="_blank"
@@ -225,9 +228,7 @@ const App = () => {
                 </div>
                 <div className="md:w-1/2">
                   <div className="bg-slate-800 rounded-xl p-4 h-full">
-                    {/* ======================================== */}
                     {/* FINAL REPORT PDF PREVIEW - INSERT HERE */}
-                    {/* ======================================== */}
                     <iframe
                       src="/assets/final-report.pdf"
                       className="w-full h-80 md:h-96 rounded-lg"
@@ -255,10 +256,7 @@ const App = () => {
                       </span>
                     </div>
                     <div className="bg-slate-800 rounded-lg mb-4 overflow-hidden">
-                      {/* ======================================== */}
-                      {/* DAILY DIARY PDF PREVIEW - ALREADY CONFIGURED */}
-                      {/* Each day uses its respective PDF link from diaryDays array */}
-                      {/* ======================================== */}
+                      {/* DAILY DIARY PDF PREVIEW */}
                       <iframe
                         src={day.link}
                         className="w-full h-40"
@@ -266,10 +264,8 @@ const App = () => {
                       ></iframe>
                     </div>
                     <div className="flex gap-2">
-                      {/* ======================================== */}
-                      {/* DAILY DIARY PDF LINKS - ALREADY CONFIGURED */}
+                      {/* DAILY DIARY PDF LINKS */}
                       {/* Links are set in the diaryDays array above */}
-                      {/* ======================================== */}
                       <a
                         href={day.link}
                         target="_blank"
@@ -324,9 +320,7 @@ const App = () => {
                   </div>
 
                   <div className="flex flex-wrap gap-4">
-                    {/* ======================================== */}
-                    {/* PROJECT REPOSITORY LINK - INSERT HERE */}
-                    {/* ======================================== */}
+                    {/* PROJECT REPOSITORY LINK*/}
                     <a
                       href="https://github.com/yourusername/yourproject"
                       target="_blank"
