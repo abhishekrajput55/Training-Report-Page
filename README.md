@@ -4,6 +4,10 @@ Here's a comprehensive README.md file for your Training Report project:
 
 A modern, responsive dashboard for showcasing industrial training reports including final documentation, daily diaries, and project repository links.
 
+🌐 Live Website
+🔗 Training Report Dashboard
+(https://abhishekrajput55.github.io/Training-Report-Page)
+
 ## 📋 Overview
 
 This project presents a comprehensive training report dashboard built with React and Tailwind CSS. It features:
@@ -132,7 +136,28 @@ The dashboard is fully responsive and will adapt to:
 - **Tab Navigation**: Easy switching between sections
 - **PDF Previews**: Scrollable PDF viewers in containers
 - **Progress Indicators**: Visual representation of completion status
+- 
+## 📸 Preview
+🖼️ Home Page
+Home
 
+🖼️ Projects Section
+Projects
+
+🖼️ Skill Section
+Contact
+
+🖼️ About Section
+About
+
+🖼️ Resume Section
+About
+
+🖼️ Contact Section
+Contact
+
+🖼️ Footer Section
+Footer
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -151,8 +176,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Abhishek Singh**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub: [@yourusername](https://github.com/abhishekrajput55)
+- LinkedIn: [Your LinkedIn](in/abhishek-singh-97083a2a6)
 
 ## 🙏 Acknowledgements
 
@@ -185,20 +210,14 @@ git add public/assets/
 git commit -m "Add training report PDFs"
 git push
 
-5. **Enable GitHub Pages** (optional):
-   - Go to your repository settings
-   - Scroll to "Pages" section
-   - Select "GitHub Actions" as source
-   - Your site will be published at `https://yourusername.github.io/training-report-dashboard/`
 
 ## Customization Checklist:
 
 Before publishing, make sure to:
-- [ ] Replace `yourusername` with your actual GitHub username
+- [ ] Replace `abhishekrajput55` with your actual GitHub username
 - [ ] Update the GitHub repository link
 - [ ] Add your actual PDF files to `public/assets/`
 - [ ] Customize the author information
 - [ ] Update LinkedIn profile link (if desired)
 - [ ] Add a LICENSE file if needed
 
-This README provides comprehensive documentation for anyone who wants to use or contribute to your project.
