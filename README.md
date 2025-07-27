@@ -176,8 +176,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Abhishek Singh**
 
-- GitHub: [@yourusername](https://github.com/abhishekrajput55)
-- LinkedIn: [Your LinkedIn](in/abhishek-singh-97083a2a6)
+- GitHub: [@abhishekrajput55](https://github.com/abhishekrajput55)
+- LinkedIn: [Abhishek Singh Rajput](in/abhishek-singh-97083a2a6)
 
 ## 🙏 Acknowledgements
 
