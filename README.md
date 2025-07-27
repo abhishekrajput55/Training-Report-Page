@@ -1,6 +1,5 @@
 Here's a comprehensive README.md file for your Training Report project:
 
-```markdown
 # Training Report Dashboard
 
 A modern, responsive dashboard for showcasing industrial training reports including final documentation, daily diaries, and project repository links.
@@ -49,7 +48,6 @@ This project presents a comprehensive training report dashboard built with React
 
 ## 📁 Project Structure
 
-```
 training-report-dashboard/
 ├── public/
 │   ├── assets/
@@ -64,29 +62,20 @@ training-report-dashboard/
 │   └── index.js
 ├── package.json
 └── README.md
-```
 
 ## 📦 Installation
 
 1. Clone the repository:
-```bash
 git clone https://github.com/yourusername/training-report-dashboard.git
-```
 
 2. Navigate to the project directory:
-```bash
 cd training-report-dashboard
-```
 
 3. Install dependencies:
-```bash
 npm install
-```
 
 4. Start the development server:
-```bash
 npm start
-```
 
 The application will be available at `http://localhost:3000`
 
@@ -101,31 +90,25 @@ The application will be available at `http://localhost:3000`
 ### Updating Links
 
 1. **Final Report PDF**: Update the `href` and `src` attributes in `App.js`:
-   ```jsx
    // Line ~40, ~150, ~157, ~200
    href="/assets/final-report.pdf"
    src="/assets/final-report.pdf"
-   ```
 
 2. **Daily Diary PDFs**: The paths are automatically generated as `/assets/day${i + 1}.pdf`
 
-3. **GitHub Repository**: Update the `href` attribute in `App.js`:
-   ```jsx
+3. **GitHub Repository**: Update the `href` attribute in `App.jsx`:
    // Line ~45, ~365
    href="https://github.com/yourusername/yourproject"
-   ```
 
 ### Customizing Dates
 
-Update the `diaryDates` array in `App.js` (line ~25):
-```js
+Update the `diaryDates` array in `App.jsx` (line ~25):
 const diaryDates = [
   'June 23', 'June 25', 'June 26', 'June 30',
   'July 01', 'July 02', 'July 04', 'July 07',
   'July 08', 'July 09', 'July 10', 'July 11',
   'July 14', 'July 15', 'July 16', 'July 17'
 ];
-```
 
 ## 🎯 Usage
 
@@ -180,34 +163,27 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 If you have any questions or need help with setup, please open an issue in the repository.
-```
 
 ## How to Publish to GitHub:
 
 1. **Create a new repository** on GitHub (e.g., "training-report-dashboard")
 
 2. **Initialize your local project**:
-```bash
 echo "# Training Report Dashboard" >> README.md
 git init
 git add .
 git commit -m "Initial commit: Training Report Dashboard"
-```
 
 3. **Connect to your GitHub repository**:
-```bash
 git remote add origin https://github.com/yourusername/training-report-dashboard.git
 git branch -M main
 git push -u origin main
-```
 
 4. **Add your PDF files** to the `public/assets/` folder and commit:
-```bash
 # Add your PDF files to public/assets/
 git add public/assets/
 git commit -m "Add training report PDFs"
 git push
-```
 
 5. **Enable GitHub Pages** (optional):
    - Go to your repository settings
