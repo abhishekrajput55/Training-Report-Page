@@ -6,7 +6,7 @@ A modern, responsive dashboard for showcasing industrial training reports includ
 
 🌐 Live Website
 🔗 Training Report Dashboard
-(https://abhishekrajput55.github.io/Training-Report-Page)
+(https://tr-102-dashboard.netlify.app/)
 
 ## 📋 Overview
 
