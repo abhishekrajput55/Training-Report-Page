@@ -4,6 +4,7 @@ import "./index.css";
 const App = () => {
   const [activeTab, setActiveTab] = useState("final");
   const [progress, setProgress] = useState(0);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Simulate loading progress
@@ -17,7 +18,15 @@ const App = () => {
       });
     }, 200);
 
-    return () => clearInterval(timer);
+    // Simulate app loading
+    const loadingTimer = setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+
+    return () => {
+      clearInterval(timer);
+      clearTimeout(loadingTimer);
+    };
   }, []);
 
   // DAILY DIARY REPORTS
@@ -48,7 +57,34 @@ const App = () => {
 
     date: diaryDates[i],
   }));
-
+  // Loader Component
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center">
+        <div className="text-center">
+          <div className="relative w-24 h-24 mx-auto mb-6">
+            <div className="absolute inset-0 rounded-full border-4 border-blue-500 border-t-transparent animate-spin"></div>
+            <div className="absolute inset-2 rounded-full border-4 border-cyan-400 border-t-transparent animate-spin animation-delay-150"></div>
+            <div className="absolute inset-4 rounded-full border-4 border-indigo-500 border-t-transparent animate-spin animation-delay-300"></div>
+          </div>
+          <h2 className="text-2xl font-bold text-white mb-2">
+            Loading Training Report
+          </h2>
+          <p className="text-slate-400 mb-4">
+            Abhishek Singh CRN-2315272 URN-2435222
+          </p>
+          <p className="text-slate-400 mb-4">Preparing your dashboard...</p>
+          <div className="w-64 h-2 bg-slate-700 rounded-full mx-auto overflow-hidden">
+            <div
+              className="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full transition-all duration-300"
+              style={{ width: `${progress}%` }}
+            ></div>
+          </div>
+          <p className="text-slate-500 text-sm mt-2">{progress}%</p>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 text-white font-sans">
       {/* Hero Section */}
