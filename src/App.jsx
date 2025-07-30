@@ -125,7 +125,7 @@ const App = () => {
                 {/* PROJECT REPOSITORY LINK - INSERT HERE */}
 
                 <a
-                  href="https://github.com/yourusername/yourproject"
+                  href="https://github.com/abhishekrajput55/TR-102-Project"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-1 shadow-lg flex items-center"
@@ -134,7 +134,7 @@ const App = () => {
                 </a>
 
                 <a
-                  href="https://github.com/yourusername/yourproject"
+                  href="https://wholesalemarket.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-1 shadow-lg flex items-center"
@@ -537,7 +537,7 @@ const App = () => {
 
           <div className="border-t border-slate-800 mt-8 pt-6 text-center text-slate-500 text-sm">
             <p>
-              © {new Date().getFullYear()} Abhishek Singh CRN-2315272
+              © {new Date().getFullYear()} Abhishek Singh | CRN-2315272 |
               URN-2435222. All rights reserved.
             </p>
           </div>
